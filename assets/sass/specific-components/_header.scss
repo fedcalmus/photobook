@@ -1,2 +1,9 @@
 /* Header styles */
 
+header {
+  a {
+    &:hover {
+      @include opacity(0.8)
+    }
+  }
+}
