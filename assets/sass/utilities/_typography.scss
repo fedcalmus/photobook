@@ -1,2 +1,43 @@
 /* Typography */
 
+// headings
+
+h1 {
+  font-size: $xl;
+}
+
+h2 {
+  font-size: $lg;
+}
+
+h3 {
+  font-size: $md;
+}
+
+h4 {
+  font-size: $sm;
+}
+
+h5 {
+  font-size: $xs;
+}
+
+h6 {
+  font-size: $xxs;
+}
+
+// text transform
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+
+
+
+
+

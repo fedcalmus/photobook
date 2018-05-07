@@ -1,2 +1,31 @@
 /* Content element styles */
 
+body {
+  font-size: $sm;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.clearAfter {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+// Float
+
+.fltRight {
+  float: right;
+}
+
+.fltLeft {
+  float: left;
+}
+
