@@ -1,2 +1,50 @@
 /* Fonts */
 
+// Import PFAgora Regular
+
+@font-face {
+  font-family: "PFAgora Regular";
+  src: url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.eot"),
+  url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff") format("woff"),
+  url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.ttf") format("truetype"),
+  url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Import PFAgora Light
+
+@font-face {
+  font-family: "PFAgora Light";
+  src: url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.eot"),
+  url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.woff") format("woff"),
+  url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.ttf") format("truetype"),
+  url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Import PFAgora Thin
+
+@font-face {
+  font-family: "PFAgora Thin";
+  src: url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff") format("woff"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf") format("truetype"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Import PFAgora Bold
+
+@font-face {
+  font-family: "PFAgora Bold";
+  src: url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff") format("woff"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf") format("truetype"),
+  url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
