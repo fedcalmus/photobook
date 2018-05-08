@@ -2855,8 +2855,8 @@ readers do not read off random characters that represent icons */
 /* Import utilities */
 /* Fonts */
 @font-face {
-  font-family: "PFAgora Regular";
-  src: url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.eot"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff") format("woff"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.svg") format("svg");
+  font-family: "PFAgora Thin";
+  src: url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -2865,8 +2865,8 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: "PFAgora Thin";
-  src: url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.svg") format("svg");
+  font-family: "PFAgora Regular";
+  src: url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.eot"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.woff") format("woff"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Regular/PFAgoraSansPro-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -3337,6 +3337,11 @@ h5 {
 h6 {
   font-size: 14px; }
 
+.banner p {
+  font-family: PFAgora Thin;
+  font-size: 60px;
+  text-transform: uppercase; }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -3383,10 +3388,36 @@ h6 {
 
 /* Import global components */
 /* Buttons */
+.btnMd {
+  padding: 10px 35px 15px 35px; }
+
+.btnL {
+  padding: 25px 35px;
+  font-size: 24px;
+  font-family: PFAgora Thin; }
+
+.btnMain {
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #242a31;
+  -moz-transition: 0.7s;
+  -o-transition: 0.7s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  background-color: transparent; }
+  .btnMain:hover {
+    background-color: #e11a27;
+    border-color: transparent;
+    color: #ffffff; }
+
 /* Content element styles */
 body {
   font-size: 18px;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  font-family: PFAgora Regular; }
 
 .container {
   width: 85%;
@@ -3405,13 +3436,36 @@ body {
   float: left; }
 
 /* Import specific components */
-/* Index */
 /* Header styles */
-header a:hover {
-  opacity: 0.8;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-  filter: alpha(opacity=80); }
+header a {
+  color: #242a31; }
+  header a:hover {
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80); }
+header .phoneNumber {
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  background-color: #ffd200;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-position: under; }
 
+/* Banner */
+.banner {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 547px;
+  text-align: center; }
+  .banner span {
+    font-family: PFAgora Light;
+    font-size: 24px;
+    display: block; }
+
+/* Index */
 /* Footer */
 
 /*# sourceMappingURL=main.css.map */

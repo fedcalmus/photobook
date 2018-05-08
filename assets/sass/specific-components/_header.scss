@@ -2,8 +2,16 @@
 
 header {
   a {
+    color: $bunker;
+
     &:hover {
-      @include opacity(0.8)
+      @include opacity(0.8);
     }
+  }
+
+  .phoneNumber {
+    @include border-radius(9px);
+    background-color: $yellow;
+    @include text-decoration-dashed;
   }
 }

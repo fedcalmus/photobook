@@ -35,3 +35,27 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
   filter: alpha(opacity=$IEValue);
 }
+
+// Background image
+
+@mixin bgImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+// Text decoration (dashed)
+
+@mixin text-decoration-dashed {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-underline-position: under;
+}
+
+// Border
+
+@mixin border-all($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}

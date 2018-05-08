@@ -1,0 +1,19 @@
+/* Banner */
+
+.banner {
+  background-image: url('../images/banner.png');
+  @include bgImage;
+  height: 547px;
+  text-align: center;
+
+  p {
+    @extend %mainHeading;
+  }
+
+  span {
+    font-family: $light;
+    font-size: $lg;
+    display: block;
+  }
+
+}

@@ -1,2 +1,24 @@
 /* Buttons */
 
+.btnMd {
+  padding: 10px 35px 15px 35px;
+}
+
+.btnL {
+  padding: 25px 35px;
+  font-size: $lg;
+  font-family: $thin;
+}
+
+.btnMain {
+  @include border-radius(9px);
+  @include border-all(1px, solid, $bunker);
+  @include transition(0.7s);
+  background-color: transparent;
+    &:hover {
+      background-color: $red;
+      border-color: transparent;
+      color: #ffffff;
+    }
+
+}
