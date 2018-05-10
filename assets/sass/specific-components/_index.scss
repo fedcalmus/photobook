@@ -110,43 +110,58 @@
   padding-top: 90px;
   padding-bottom: 120px;
 
-  .item {
-    padding-right: 70px;
-    width: 33.33333%;
+  .items  {
+    padding-bottom: 80px;
 
-    span {
-      display: inline-block;
+    .item {
+      padding-right: 70px;
+      width: 30%;
 
-      &:first-child {
-        padding: 22px 0;
-        width: 100%;
-        text-align: center;
-        background-color: $yellow;
-        @include border-top-radius(7px);
-        text-transform: uppercase;
-        font-size: $xxl;
-        letter-spacing: 2px;
-        font-family: $light;
-        margin-bottom: 6px;
+      span {
+        display: inline-block;
+
+        &:first-child {
+          padding: 22px 0;
+          width: 100%;
+          text-align: center;
+          background-color: $yellow;
+          @include border-top-radius(7px);
+          text-transform: uppercase;
+          font-size: $xxl;
+          letter-spacing: 2px;
+          font-family: $light;
+          margin-bottom: 6px;
+        }
+
       }
 
-    }
+      .content {
+        padding: 31px 45px 65px 35px;
+        background-color: $creamy;
+        @include border-bottom-radius(7px);
+        line-height: 25px;
 
-    .content {
-      padding: 31px 45px 65px 35px;
-      background-color: $creamy;
-      @include border-bottom-radius(7px);
-      line-height: 25px;
-
-      &:last-child {
-        span {
-          font-family: $bold;
-          font-weight: bold;
-          color: $red;
+        &:last-child {
+          span {
+            font-family: $bold;
+            font-weight: bold;
+            color: $red;
+          }
         }
       }
     }
-
   }
+}
 
+// Testimonials
+
+.testimonials {
+
+  background-image: url('../images/testimonials-banner.png');
+  @include bgImage;
+  height: 767px;
+
+  .title {
+    @extend %mainHeading;
+  }
 }

@@ -3320,27 +3320,28 @@ table {
 
 /* Typography */
 h1 {
-  font-size: 30px; }
+  font-size: 60px; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 36px; }
 
 h3 {
-  font-size: 22px; }
+  font-size: 30px; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 24px; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 22px; }
 
 h6 {
-  font-size: 14px; }
+  font-size: 18px; }
 
-.banner p, .advantage .title {
+.banner p, .advantage .title, .testimonials .title {
   font-family: PFAgora XThin;
   font-size: 60px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  letter-spacing: 2px; }
 
 .uppercase {
   text-transform: uppercase; }
@@ -3385,6 +3386,9 @@ h6 {
 
 .flexWrap {
   flex-wrap: wrap; }
+
+.justifyCenter {
+  justify-content: center; }
 
 /* Import global components */
 /* Buttons */
@@ -3441,6 +3445,9 @@ body {
 
 .redColor {
   color: #e11a27; }
+
+.alignCenter {
+  text-align: center; }
 
 /* Import specific components */
 /* Header styles */
@@ -3559,39 +3566,48 @@ header .phoneNumber {
 .conditions {
   padding-top: 90px;
   padding-bottom: 120px; }
-  .conditions .item {
-    padding-right: 70px;
-    width: 33.33333%; }
-    .conditions .item span {
-      display: inline-block; }
-      .conditions .item span:first-child {
-        padding: 22px 0;
-        width: 100%;
-        text-align: center;
-        background-color: #ffd200;
-        -webkit-border-top-right-radius: 7px;
-        border-top-right-radius: 7px;
-        -webkit-border-top-left-radius: 7px;
-        border-top-left-radius: 7px;
+  .conditions .items {
+    padding-bottom: 80px; }
+    .conditions .items .item {
+      padding-right: 70px;
+      width: 30%; }
+      .conditions .items .item span {
+        display: inline-block; }
+        .conditions .items .item span:first-child {
+          padding: 22px 0;
+          width: 100%;
+          text-align: center;
+          background-color: #ffd200;
+          -webkit-border-top-right-radius: 7px;
+          border-top-right-radius: 7px;
+          -webkit-border-top-left-radius: 7px;
+          border-top-left-radius: 7px;
+          background-clip: padding-box;
+          text-transform: uppercase;
+          font-size: 36px;
+          letter-spacing: 2px;
+          font-family: PFAgora Light;
+          margin-bottom: 6px; }
+      .conditions .items .item .content {
+        padding: 31px 45px 65px 35px;
+        background-color: #f3f0e7;
+        -webkit-border-bottom-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        -webkit-border-bottom-left-radius: 7px;
+        border-bottom-left-radius: 7px;
         background-clip: padding-box;
-        text-transform: uppercase;
-        font-size: 36px;
-        letter-spacing: 2px;
-        font-family: PFAgora Light;
-        margin-bottom: 6px; }
-    .conditions .item .content {
-      padding: 31px 45px 65px 35px;
-      background-color: #f3f0e7;
-      -webkit-border-bottom-right-radius: 7px;
-      border-bottom-right-radius: 7px;
-      -webkit-border-bottom-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-      background-clip: padding-box;
-      line-height: 25px; }
-      .conditions .item .content:last-child span {
-        font-family: PFAgora Bold;
-        font-weight: bold;
-        color: #e11a27; }
+        line-height: 25px; }
+        .conditions .items .item .content:last-child span {
+          font-family: PFAgora Bold;
+          font-weight: bold;
+          color: #e11a27; }
+
+.testimonials {
+  background-image: url("../images/testimonials-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 767px; }
 
 /* Footer */
 footer {

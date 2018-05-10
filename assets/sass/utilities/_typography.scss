@@ -3,33 +3,34 @@
 // headings
 
 h1 {
-  font-size: $xl;
+  font-size: $extra;
 }
 
 h2 {
-  font-size: $lg;
+  font-size: $xxl;
 }
 
 h3 {
-  font-size: $md;
+  font-size: $xl;
 }
 
 h4 {
-  font-size: $sm;
+  font-size: $lg;
 }
 
 h5 {
-  font-size: $xs;
+  font-size: $md;
 }
 
 h6 {
-  font-size: $xxs;
+  font-size: $sm;
 }
 
 %mainHeading {
   font-family: $xthin;
   font-size: $extra;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 // text transform
