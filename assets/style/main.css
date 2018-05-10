@@ -3439,6 +3439,9 @@ body {
 .fltLeft {
   float: left; }
 
+.redColor {
+  color: #e11a27; }
+
 /* Import specific components */
 /* Header styles */
 header a {
@@ -3585,6 +3588,10 @@ header .phoneNumber {
       border-bottom-left-radius: 7px;
       background-clip: padding-box;
       line-height: 25px; }
+      .conditions .item .content:last-child span {
+        font-family: PFAgora Bold;
+        font-weight: bold;
+        color: #e11a27; }
 
 /* Footer */
 footer {

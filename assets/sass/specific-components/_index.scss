@@ -137,7 +137,16 @@
       background-color: $creamy;
       @include border-bottom-radius(7px);
       line-height: 25px;
+
+      &:last-child {
+        span {
+          font-family: $bold;
+          font-weight: bold;
+          color: $red;
+        }
+      }
     }
+
   }
 
 }
