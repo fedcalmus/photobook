@@ -7,9 +7,13 @@ body {
 }
 
 .container {
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
-  padding: 0 30px;
+}
+
+.containerBig {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .clearAfter {
@@ -29,4 +33,3 @@ body {
 .fltLeft {
   float: left;
 }
-

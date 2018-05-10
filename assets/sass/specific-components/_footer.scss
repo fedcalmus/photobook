@@ -1,1 +1,50 @@
 /* Footer */
+
+footer {
+  background-color: $yellow;
+
+  ul {
+    padding-right: 70px;
+    margin-right: 50px;
+    padding-top: 40px;
+    border-top: 1px solid;
+
+    li {
+      padding-bottom: 20px;
+    }
+
+    i {
+      font-size: $md;
+    }
+  }
+
+  a {
+    color: #000000;
+    @include transition(0.3s);
+
+    &:hover {
+      @include opacity(0.6);
+    }
+  }
+
+  .bookTypes {
+    a {
+      text-transform: uppercase;
+    }
+  }
+
+  .socialIcons {
+    li {
+      display: inline-block;
+      padding-right: 20px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  p {
+    text-align: center;
+  }
+}

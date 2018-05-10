@@ -8,11 +8,16 @@ header {
     &:hover {
       @include opacity(0.8);
     }
+
+    i {
+      font-size: $lg;
+    }
   }
 
   .phoneNumber {
     @include border-radius(9px);
     background-color: $yellow;
     @include text-decoration-dashed;
+    font-size: $sm;
   }
 }
