@@ -12,6 +12,7 @@ header {
     i {
       font-size: $lg;
     }
+
   }
 
   .phoneNumber {
@@ -20,4 +21,5 @@ header {
     @include text-decoration-dashed;
     font-size: $sm;
   }
+
 }
