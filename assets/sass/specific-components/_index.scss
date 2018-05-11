@@ -212,7 +212,7 @@
     .owl-nav {
       text-align: right;
 
-      &[class*=owl-]:hover {
+      [class*=owl-]:hover {
         background: transparent;
         color: $bunker;
         @include opacity(0.5);

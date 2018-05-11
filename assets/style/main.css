@@ -3648,7 +3648,7 @@ header .phoneNumber {
         padding-left: 5px; }
     .testimonials .owl-carousel .owl-nav {
       text-align: right; }
-      .testimonials .owl-carousel .owl-nav[class*=owl-]:hover {
+      .testimonials .owl-carousel .owl-nav [class*=owl-]:hover {
         background: transparent;
         color: #242a31;
         opacity: 0.5;
