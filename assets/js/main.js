@@ -6,7 +6,7 @@ $(function() {
         owlCarousel: function () {
             $('.owl-carousel').owlCarousel({
                 nav: true,
-                navText: ["<!--<span>Next testimonial <img src='assets/images/next-arrow.png'></span>-->","<span>Next testimonial <img src='assets/images/next-arrow.png'></span>"],
+                navText: ["<!--<span>Next testimonial <img src='assets/images/next-arrow.png'></span>-->","<span>Next testimonial<img src='assets/images/next-arrow.png'></span>"],
                 items: 1,
                 loop: true,
                 center: true,

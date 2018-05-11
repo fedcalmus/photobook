@@ -49,17 +49,14 @@
     position: relative;
     top: 68px;
   }
-
 }
 
 // Advantage section
 
 .advantage {
-
   padding-bottom: 80px;
   background-color: $creamy;
   text-align: center;
-
 
   .items {
     @include flex();
@@ -89,7 +86,6 @@
       padding-top: 25px;
       padding-bottom: 30px;
       font-size: $lg;
-
     }
   }
 
@@ -103,7 +99,6 @@
 // Solutions
 
 .solutions {
-
   padding-bottom: 115px;
 
   .title {
@@ -121,14 +116,33 @@
       @include flex();
       @extend .flexColumn;
       @extend .spaceBetween;
+      position: relative;
+
+      .bestseller{
+        border-bottom: 25px solid $yellow;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        height: 0;
+        width: 70%;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        top: -25px;
+        text-align: center;
+
+        span {
+          color: $red;
+          font-family: $bold;
+        }
+      }
 
       .bookType {
         font-size: $xxl;
         padding-top: 30px;
         padding-bottom: 10px;
-        text-transform: uppercase;
         display: block;
         text-align: center;
+        text-transform: uppercase;
       }
 
       .info {
@@ -139,7 +153,6 @@
         @include flex();
         @extend .flexColumn;
         @extend .spaceBetween;
-
       }
 
       ul {
@@ -148,6 +161,11 @@
 
         li {
           padding-bottom: 10px;
+
+          span {
+            position: relative;
+            top: -3px;
+          }
         }
       }
 
@@ -161,8 +179,11 @@
         text-align: center;
         font-family: $thin;
         font-size: $md;
-        text-transform: uppercase;
         padding: 15px 0;
+
+        span {
+          text-transform: uppercase;
+        }
       }
     }
   }
@@ -171,13 +192,32 @@
 // Testimonials
 
 .testimonials {
-
   background-image: url('../images/testimonials-banner.png');
   @include bgImage;
   height: 767px;
 
   .owl-carousel {
     max-width: 530px;
+    padding-bottom: 70px;
+
+    span {
+      @include flex();
+      align-items: center;
+
+      img {
+        padding-left: 5px;
+      }
+    }
+
+    .owl-nav {
+      text-align: right;
+
+      &[class*=owl-]:hover {
+        background: transparent;
+        color: $bunker;
+        @include opacity(0.5);
+      }
+    }
 
     .item {
 
@@ -207,7 +247,6 @@
 // Conditions section
 
 .conditions {
-
   padding-top: 90px;
   padding-bottom: 120px;
 

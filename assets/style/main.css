@@ -3573,14 +3573,29 @@ header .phoneNumber {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex; }
+    display: -webkit-flex;
+    position: relative; }
+    .solutions .items .item .bestseller {
+      border-bottom: 25px solid #ffd200;
+      border-left: 25px solid transparent;
+      border-right: 25px solid transparent;
+      height: 0;
+      width: 70%;
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      top: -25px;
+      text-align: center; }
+      .solutions .items .item .bestseller span {
+        color: #e11a27;
+        font-family: PFAgora Bold; }
     .solutions .items .item .bookType {
       font-size: 36px;
       padding-top: 30px;
       padding-bottom: 10px;
-      text-transform: uppercase;
       display: block;
-      text-align: center; }
+      text-align: center;
+      text-transform: uppercase; }
     .solutions .items .item .info {
       background-color: #ffffff;
       margin: 5px;
@@ -3596,6 +3611,9 @@ header .phoneNumber {
       list-style-position: inside; }
       .solutions .items .item ul li {
         padding-bottom: 10px; }
+        .solutions .items .item ul li span {
+          position: relative;
+          top: -3px; }
     .solutions .items .item .price {
       font-size: 60px;
       font-family: PFAgora Light;
@@ -3604,8 +3622,9 @@ header .phoneNumber {
       text-align: center;
       font-family: PFAgora Thin;
       font-size: 22px;
-      text-transform: uppercase;
       padding: 15px 0; }
+      .solutions .items .item p span {
+        text-transform: uppercase; }
 
 .testimonials {
   background-image: url("../images/testimonials-banner.png");
@@ -3614,7 +3633,25 @@ header .phoneNumber {
   background-position: center;
   height: 767px; }
   .testimonials .owl-carousel {
-    max-width: 530px; }
+    max-width: 530px;
+    padding-bottom: 70px; }
+    .testimonials .owl-carousel span {
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      align-items: center; }
+      .testimonials .owl-carousel span img {
+        padding-left: 5px; }
+    .testimonials .owl-carousel .owl-nav {
+      text-align: right; }
+      .testimonials .owl-carousel .owl-nav[class*=owl-]:hover {
+        background: transparent;
+        color: #242a31;
+        opacity: 0.5;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=50); }
     .testimonials .owl-carousel .item .image:first-child {
       border-radius: 100%;
       -webkit-border-radius: 100%;
