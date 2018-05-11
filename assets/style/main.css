@@ -3326,7 +3326,7 @@ h5 {
 h6 {
   font-size: 18px; }
 
-.banner p, .advantage .title, .testimonials .title {
+.title {
   font-family: PFAgora XThin;
   font-size: 60px;
   text-transform: uppercase;
@@ -3552,6 +3552,28 @@ header .phoneNumber {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%; }
 
+.testimonials {
+  background-image: url("../images/testimonials-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 767px; }
+  .testimonials .owl-carousel {
+    max-width: 530px; }
+    .testimonials .owl-carousel .item .image:first-child {
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      width: 158px;
+      height: 158px;
+      margin-right: 25px; }
+    .testimonials .owl-carousel .item h3 {
+      font-family: PFAgora Light;
+      letter-spacing: 2px;
+      padding-bottom: 10px; }
+    .testimonials .owl-carousel .item p {
+      text-align: left; }
+
 .conditions {
   padding-top: 90px;
   padding-bottom: 120px; }
@@ -3590,28 +3612,8 @@ header .phoneNumber {
           font-family: PFAgora Bold;
           font-weight: bold;
           color: #e11a27; }
-
-.testimonials {
-  background-image: url("../images/testimonials-banner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 767px; }
-  .testimonials .owl-carousel {
-    max-width: 530px; }
-    .testimonials .owl-carousel .item .image:first-child {
-      border-radius: 100%;
-      -webkit-border-radius: 100%;
-      -moz-border-radius: 100%;
-      width: 158px;
-      height: 158px;
-      margin-right: 25px; }
-    .testimonials .owl-carousel .item h3 {
-      font-family: PFAgora Light;
-      letter-spacing: 2px;
-      padding-bottom: 10px; }
-    .testimonials .owl-carousel .item p {
-      text-align: left; }
+        .conditions .items .item .content ul {
+          list-style-type: inherit; }
 
 /* Footer */
 footer {

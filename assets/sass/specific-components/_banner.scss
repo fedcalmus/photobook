@@ -6,10 +6,6 @@
   height: 547px;
   text-align: center;
 
-  p {
-    @extend %mainHeading;
-  }
-
   span {
     font-family: $light;
     font-size: $lg;
