@@ -3445,6 +3445,8 @@ body {
 
 /* Import specific components */
 /* Header styles */
+header .logo img {
+  height: 19px; }
 header a {
   color: #242a31; }
   header a:hover {
