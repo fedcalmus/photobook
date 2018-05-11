@@ -2860,6 +2860,11 @@ readers do not read off random characters that represent icons */
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: "PFAgora Thin";
+  src: url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.eot"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.woff") format("woff"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Thin/PFAgoraSansPro-Thin.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: "PFAgora Light";
   src: url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.eot"), url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.woff") format("woff"), url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.ttf") format("truetype"), url("../fonts/PFAgoraSansPro-Light/PFAgoraSansPro-Light.svg") format("svg");
   font-weight: normal;
@@ -3352,7 +3357,7 @@ h6 {
   display: -ms-flexbox;
   display: -webkit-flex; }
 
-.flexColumn {
+.flexColumn, .solutions .items .item, .solutions .items .item .info {
   flex-direction: column; }
 
 .flexRow {
@@ -3361,7 +3366,7 @@ h6 {
 .alignItemCenter {
   align-items: center; }
 
-.spaceBetween {
+.spaceBetween, .solutions .items .item, .solutions .items .item .info {
   justify-content: space-between; }
 
 .spaceAround {
@@ -3552,6 +3557,56 @@ header .phoneNumber {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%; }
 
+.solutions {
+  padding-bottom: 115px; }
+  .solutions .title {
+    text-align: center; }
+  .solutions .items .item {
+    background-color: #ffd200;
+    margin-right: 70px;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    width: 24%;
+    position: relative;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; }
+    .solutions .items .item .bookType {
+      font-size: 36px;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      display: block;
+      text-align: center; }
+    .solutions .items .item .info {
+      background-color: #ffffff;
+      margin: 5px;
+      padding: 20px;
+      height: 65%;
+      display: flex;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex; }
+    .solutions .items .item ul {
+      list-style-image: url("../images/check.png");
+      list-style-position: inside; }
+      .solutions .items .item ul li {
+        padding-bottom: 10px; }
+    .solutions .items .item .price {
+      font-size: 60px;
+      font-family: PFAgora Light;
+      text-align: center; }
+    .solutions .items .item p {
+      text-align: center;
+      font-family: PFAgora Thin;
+      font-size: 22px;
+      text-transform: uppercase;
+      padding: 15px 0; }
+
 .testimonials {
   background-image: url("../images/testimonials-banner.png");
   background-repeat: no-repeat;
@@ -3607,7 +3662,8 @@ header .phoneNumber {
         -webkit-border-bottom-left-radius: 7px;
         border-bottom-left-radius: 7px;
         background-clip: padding-box;
-        line-height: 25px; }
+        line-height: 25px;
+        height: 75%; }
         .conditions .items .item .content:last-child span {
           font-family: PFAgora Bold;
           font-weight: bold;

@@ -103,8 +103,68 @@
 // Solutions
 
 .solutions {
-  .item {
 
+  padding-bottom: 115px;
+
+  .title {
+    text-align: center;
+  }
+
+  .items {
+
+    .item {
+      background-color: $yellow;
+      margin-right: 70px;
+      @include border-radius(9px);
+      width: 24%;
+      position: relative;
+      @include flex();
+      @extend .flexColumn;
+      @extend .spaceBetween;
+
+      .bookType {
+        font-size: $xxl;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+      }
+
+      .info {
+        background-color: #ffffff;
+        margin: 5px;
+        padding: 20px;
+        height: 65%;
+        @include flex();
+        @extend .flexColumn;
+        @extend .spaceBetween;
+
+      }
+
+      ul {
+        list-style-image: url("../images/check.png");
+        list-style-position: inside;
+
+        li {
+          padding-bottom: 10px;
+        }
+      }
+
+      .price {
+        font-size: $extra;
+        font-family: $light;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-family: $thin;
+        font-size: $md;
+        text-transform: uppercase;
+        padding: 15px 0;
+      }
+    }
   }
 }
 
@@ -120,8 +180,6 @@
     max-width: 530px;
 
     .item {
-
-
 
       .image {
 
@@ -175,7 +233,6 @@
           font-family: $light;
           margin-bottom: 6px;
         }
-
       }
 
       .content {
@@ -183,6 +240,7 @@
         background-color: $creamy;
         @include border-bottom-radius(7px);
         line-height: 25px;
+        height: 75%;
 
         &:last-child {
           span {
@@ -191,6 +249,7 @@
             color: $red;
           }
         }
+
         ul {
           list-style-type: inherit;
         }
