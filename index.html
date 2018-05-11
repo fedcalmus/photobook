@@ -12,6 +12,10 @@
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
+    <!-- Owl carousel css -->
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
+
     <!-- Main css -->
     <link rel="stylesheet" href="assets/style/main.css">
 
@@ -109,15 +113,19 @@
     </div>
 </section>
 <!-- Advantage end -->
+<!-- Solutions start -->
+
+<!-- Solutions end -->
 <!-- Testimonials start -->
 <section class="testimonials">
     <div class="container">
-        <span class="title pt50 block">Advantage</span>
+        <span class="title pt50 pb60 block">Testimonials</span>
+        <div class="owl-carousel owl-theme">
         <div class="item">
-            <div>
-                <img src="assets/images/testimonials.png" alt="Testimonial image">
+            <div class="flex alignItemCenter pb30">
+                <img src="assets/images/testimonials.png" alt="Testimonial image" class="image">
                 <div>
-                    <h3>John Doe</h3>
+                    <h3 class="uppercase">John Doe</h3>
                     <h6>Wedding photographer</h6>
                 </div>
             </div>
@@ -129,6 +137,30 @@
                 earum eius exercitationem iure iusto maiores minus natus nisi pariatur perspiciatis possimus quas quis
                 rerum, sunt ullam.
             </p>
+         <!--   <div>
+                <span>Next testimonial <img src="assets/images/next-arrow.png" alt=""></span>
+            </div>-->
+        </div>
+            <div class="item">
+                <div class="flex alignItemCenter pb30">
+                    <img src="assets/images/testimonials-2.jpg" alt="Testimonial image" class="image">
+                    <div>
+                        <h3 class="uppercase">John Doe</h3>
+                        <h6>Wedding photographer</h6>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, eligendi enim est impedit minima nihil
+                    nisi quae quasi quidem sint. Blanditiis fugit ipsam labore modi nulla quae, quam recusandae sint. Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam architecto, dolore dolorum ea id ipsum
+                    nostrum omnis placeat quaerat ratione sunt, tempora temporibus! Dignissimos eum ipsam officia omnis ut!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias aspernatur aut consectetur
+                    earum eius exercitationem iure iusto maiores minus natus nisi pariatur perspiciatis possimus quas quis
+                    rerum, sunt ullam.
+                </p>
+                <!--<div>
+                    <span>Next testimonial <img src="assets/images/next-arrow.png" alt=""></span>
+                </div>-->
+            </div>
         </div>
     </div>
 </section>
@@ -211,5 +243,10 @@
     </div>
 </footer>
 <!-- Footer End -->
+<!-- Scripts start -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<!-- Scripts end -->
 </body>
 </html>

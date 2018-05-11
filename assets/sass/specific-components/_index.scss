@@ -164,4 +164,33 @@
   .title {
     @extend %mainHeading;
   }
+
+  .owl-carousel {
+    max-width: 530px;
+
+    .item {
+
+
+
+      .image {
+
+        &:first-child {
+          @include border-radius(100%);
+          width: 158px;
+          height: 158px;
+          margin-right: 25px;
+        }
+      }
+
+      h3 {
+        font-family: $light;
+        letter-spacing: 2px;
+        padding-bottom: 10px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
 }
