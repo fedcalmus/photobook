@@ -3739,6 +3739,8 @@ footer {
     padding-right: 20px; }
   footer .socialIcons:last-child {
     padding-right: 0; }
+  footer .logo {
+    height: 109px; }
   footer p {
     text-align: center; }
 
