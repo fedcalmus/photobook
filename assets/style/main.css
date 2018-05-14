@@ -3412,7 +3412,7 @@ h6 {
     border-color: transparent;
     color: #ffffff; }
 
-/* Content element styles */
+/* Content elements */
 body {
   font-size: 18px;
   background-color: #ffffff;
@@ -3444,7 +3444,7 @@ body {
   text-align: center; }
 
 /* Import specific components */
-/* Header styles */
+/* Header  */
 header .logo img {
   height: 19px; }
 header a {
